@@ -1,3 +1,5 @@
+'use strict'
+
 const EventEmitter = require('events')
 const pipe = require('it-pipe')
 const PeerId = require('peer-id')

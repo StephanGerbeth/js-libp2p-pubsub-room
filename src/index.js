@@ -1,3 +1,5 @@
+'use strict'
+
 const diff = require('hyperdiff')
 const EventEmitter = require('events')
 const clone = require('lodash.clonedeep')
@@ -115,7 +117,7 @@ class PubSubRoom extends EventEmitter {
 
     differences.added.forEach((peer) => this.emit('peer joined', peer))
     differences.removed.forEach((peer) => {
-      if(this._connections[peer]) {
+      if (this._connections[peer]) {
         this._connections[peer].stop()
         delete this._connections[peer]
         this.emit('peer left', peer)
@@ -127,8 +129,7 @@ class PubSubRoom extends EventEmitter {
 
   _onMessage (message) {
     message.data = uint8ArrayToString(message.data)
-    if(message.from !== this._libp2p.peerId.toB58String())
-        this.emit('message', message)
+    if (message.from !== this._libp2p.peerId.toB58String()) { this.emit('message', message) }
   }
 
   _handleDirectMessage (message) {
