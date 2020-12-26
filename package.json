@@ -3,6 +3,10 @@
   "version": "0.0.0",
   "description": "Libp2p pubsub room",
   "main": "src/index.js",
+  "files": [
+    "dist",
+    "src"
+  ],
   "scripts": {
     "test": "aegir test",
     "test:node": "aegir test -t node",
