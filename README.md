@@ -1,6 +1,8 @@
 # libp2p-pubsub-room
 > Creates a room based on a LibP2P pub-sub channel. Emits membership events, listens for messages, broadcast and direct messeges to peers.
 
+*Adapted from https://github.com/ipfs-shipyard/ipfs-pubsub-room*
+
 ## Install
 
 ```bash

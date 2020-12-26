@@ -18,10 +18,11 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ipfs-shipyard/ipfs-pubsub-room.git"
+    "url": "git+https://github.com/hexafield/js-libp2p-pubsub-room.git"
   },
   "keywords": [
     "ipfs",
+    "libp2p",
     "pubsub",
     "p2p",
     "room",
@@ -30,9 +31,9 @@
   "author": "Pedro Teixeira <i@pgte.me>",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/ipfs-shipyard/ipfs-pubsub-room/issues"
+    "url": "https://github.com/hexafield/js-libp2p-pubsub-room/issues"
   },
-  "homepage": "https://github.com/ipfs-shipyard/ipfs-pubsub-room#readme",
+  "homepage": "https://github.com/hexafield/js-libp2p-pubsub-room#readme",
   "dependencies": {
     "hyperdiff": "^2.0.5",
     "it-pipe": "^1.1.0",
@@ -50,7 +51,8 @@
     "libp2p-websockets": "^0.15.0",
     "multiaddr": "^8.0.0",
     "peer-id": "^0.14.2",
-    "rimraf": "^3.0.0"
+    "rimraf": "^3.0.0",
+    "uint8arrays": "^1.1.0"
   },
   "contributors": [
     "CHEVALAY JOSSELIN <josselin54.chevalay@gmail.com>",
@@ -58,6 +60,7 @@
     "Eric Olszewski <eolszewski@gmail.com>",
     "Gorka <gorka@aquigorka.com>",
     "Henrique Dias <hacdias@gmail.com>",
+    "Josh Field <joshfield999@gmail.com>",
     "Pedro Teixeira <i@pgte.me>",
     "achingbrain <alex@achingbrain.net>",
     "haad <haad@headbanggames.com>",
