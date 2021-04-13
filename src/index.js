@@ -119,9 +119,9 @@ class PubSubRoom extends EventEmitter {
     differences.removed.forEach((peer) => {
       if (this._connections[peer]) {
         this._connections[peer].stop()
-        delete this._connections[peer]
-        this.emit('peer left', peer)
+        delete this._connections[peer]        
       }
+      this.emit('peer left', peer)
     })
 
     return differences.added.length > 0 || differences.removed.length > 0
