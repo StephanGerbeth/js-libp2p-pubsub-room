@@ -1,6 +1,6 @@
 {
   "name": "libp2p-pubsub-room",
-  "version": "0.30.0",
+  "version": "0.0.0",
   "description": "Libp2p pubsub room",
   "main": "src/index.js",
   "files": [
